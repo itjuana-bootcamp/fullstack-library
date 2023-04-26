@@ -1,0 +1,44 @@
+{
+  "name": "fullstack-library",
+  "version": "1.0.0",
+  "description": "Fullstack bootcamp library",
+  "main": "src/index.js",
+  "module": "lib/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c --bundleConfigAsCjs",
+    "link": "./scripts/linkLibrary.sh",
+    "unlink": "./scripts/unLinkLibrary.sh"
+  },
+  "keywords": [
+    "fullstack",
+    "bootcamp"
+  ],
+  "author": "Alfredo Alcantara",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-react": "^7.18.6",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/material": "^5.12.1",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "babel-loader": "^9.1.2",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "react": "^18.2.0",
+    "rollup": "^3.21.0"
+  },
+  "dependencies": {
+    "node": "^19.8.1",
+    "prop-types": "^15.8.1"
+  }
+}
